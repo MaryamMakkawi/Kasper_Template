@@ -1,0 +1,1362 @@
+                                                        * {
+                                                            -webkit-box-sizing: border-box;
+                                                            -moz-box-sizing: border-box;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            margin: 0;
+                                                        }
+                                                        
+                                                        html {
+                                                            scroll-behavior: smooth;
+                                                        }
+                                                        
+                                                        body {
+                                                            font-family: "Open Sans", sans-serif;
+                                                        }
+                                                        
+                                                        ul {
+                                                            list-style: none;
+                                                        }
+                                                        
+                                                        .container {
+                                                            padding-left: 15px;
+                                                            padding-right: 15px;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                        }
+                                                        /* Small */
+                                                        
+                                                        @media (min-width: 768px) {
+                                                            .container {
+                                                                width: 750px;
+                                                            }
+                                                        }
+                                                        /* Medium */
+                                                        
+                                                        @media (min-width: 992px) {
+                                                            .container {
+                                                                width: 970px;
+                                                            }
+                                                        }
+                                                        /* Large */
+                                                        
+                                                        @media (min-width: 1200px) {
+                                                            .container {
+                                                                width: 1170px;
+                                                            }
+                                                        }
+                                                        
+                                                        .main h1::before {
+                                                            content: "";
+                                                            background-color: rgb(34, 59, 61);
+                                                            width: 110px;
+                                                            height: 2px;
+                                                            position: absolute;
+                                                            left: 0;
+                                                            right: 0;
+                                                            bottom: -30px;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                        }
+                                                        
+                                                        .main h1::after {
+                                                            content: "";
+                                                            width: 20px;
+                                                            height: 20px;
+                                                            position: absolute;
+                                                            left: 0;
+                                                            right: 0;
+                                                            bottom: -40px;
+                                                            background-color: white;
+                                                            border: 2px solid rgb(34, 59, 61);
+                                                            border-radius: 50%;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                        }
+                                                        /* start header */
+                                                        
+                                                        header {
+                                                            position: absolute;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            z-index: 2;
+                                                        }
+                                                        
+                                                        header .container {
+                                                            min-height: 97px;
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            align-items: center;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        header .container::after {
+                                                            position: absolute;
+                                                            content: "";
+                                                            height: 1px;
+                                                            width: 97%;
+                                                            bottom: 0px;
+                                                            background-color: #a2a2a2;
+                                                        }
+                                                        
+                                                        .container .logo img {
+                                                            height: 40px;
+                                                        }
+                                                        
+                                                        nav {
+                                                            display: flex;
+                                                            justify-content: flex-end;
+                                                            align-items: center;
+                                                        }
+                                                        
+                                                        nav ul {
+                                                            display: flex;
+                                                        }
+                                                        
+                                                        nav ul li a {
+                                                            color: white;
+                                                            text-decoration: none;
+                                                            font-size: 15px;
+                                                            padding: 38px 10px;
+                                                            display: block;
+                                                        }
+                                                        
+                                                        nav ul li a:hover,
+                                                        nav ul li a.active {
+                                                            border-bottom: 1px solid #19c8fa;
+                                                            color: #19c8fa;
+                                                        }
+                                                        
+                                                        .toggle-menu {
+                                                            color: white;
+                                                            font-size: 22px;
+                                                        }
+                                                        
+                                                        @media (min-width: 768px) {
+                                                            .toggle-menu {
+                                                                display: none;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 767px) {
+                                                            nav ul {
+                                                                display: none;
+                                                            }
+                                                            .toggle-menu:hover+ul {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                width: 100%;
+                                                                position: absolute;
+                                                                left: 0;
+                                                                top: 100%;
+                                                                background-color: rgb(0 0 0 / 50%);
+                                                            }
+                                                            nav ul li a {
+                                                                padding-bottom: 15px;
+                                                            }
+                                                        }
+                                                        
+                                                        .iconser {
+                                                            width: 40px;
+                                                            height: 30px;
+                                                            position: relative;
+                                                            margin-left: 30px;
+                                                            border-left: 1px solid white;
+                                                        }
+                                                        
+                                                        .iconser i {
+                                                            color: white;
+                                                            font-size: 20px;
+                                                            position: absolute;
+                                                            top: 50%;
+                                                            transform: translateY(-50%);
+                                                            right: 0;
+                                                        }
+                                                        /* end header */
+                                                        /* start leading */
+                                                        
+                                                        .leading {
+                                                            position: relative;
+                                                            background-image: url(../image/landing.jpg);
+                                                            background-position: center;
+                                                            background-size: cover;
+                                                            min-height: 660px;
+                                                        }
+                                                        
+                                                        .overlay {
+                                                            background-color: rgb(0 0 0 / 50%);
+                                                            position: absolute;
+                                                            height: 100%;
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .back {
+                                                            position: absolute;
+                                                            left: 0;
+                                                            top: 160px;
+                                                            width: 50%;
+                                                            background-color: #07708ed9;
+                                                            padding: 40px 40px 60px 80px;
+                                                        }
+                                                        
+                                                        .back h2 {
+                                                            color: white;
+                                                            line-height: 1.7;
+                                                            font-weight: 100;
+                                                            font-size: 30px
+                                                        }
+                                                        
+                                                        .back p {
+                                                            margin-top: 20px;
+                                                            color: white;
+                                                            line-height: 1.9;
+                                                        }
+                                                        
+                                                        .fa-angle-left {
+                                                            color: white;
+                                                            position: absolute;
+                                                            left: 0;
+                                                            top: 50%;
+                                                            margin: 30px;
+                                                        }
+                                                        
+                                                        .fa-angle-right {
+                                                            color: white;
+                                                            position: absolute;
+                                                            right: 0;
+                                                            top: 50%;
+                                                            margin: 30px;
+                                                        }
+                                                        
+                                                        .cycle {
+                                                            position: absolute;
+                                                            bottom: 0;
+                                                            left: 47%;
+                                                            width: 100px;
+                                                            height: 50px;
+                                                            display: flex;
+                                                        }
+                                                        
+                                                        .cycle1 {
+                                                            border-radius: 50%;
+                                                            border: 1px solid white;
+                                                            width: 60%;
+                                                            height: 50%;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .cycle2 {
+                                                            border-radius: 50%;
+                                                            /* border: 1px solid white; */
+                                                            width: 60%;
+                                                            height: 50%;
+                                                            background-color: #07708ed9;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .cycle3 {
+                                                            border-radius: 50%;
+                                                            border: 1px solid white;
+                                                            width: 60%;
+                                                            height: 50%;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        @media (max-width: 768px) {
+                                                            .back {
+                                                                width: 100%;
+                                                                padding: 40px 40px 60px 80px;
+                                                            }
+                                                            .fa-angle-left {
+                                                                display: none;
+                                                            }
+                                                            .fa-angle-right {
+                                                                display: none;
+                                                            }
+                                                            .container {
+                                                                padding-left: 0;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 992px) {
+                                                            .back {
+                                                                padding: 40px 40px 0px 80px;
+                                                            }
+                                                        }
+                                                        /* end leading  */
+                                                        /* start SERVICES  */
+                                                        
+                                                        .SERVICES {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .main {
+                                                            margin-bottom: 100px;
+                                                        }
+                                                        
+                                                        .main h1 {
+                                                            position: relative;
+                                                            margin-top: 100px;
+                                                            font-weight: 100;
+                                                            font-size: 40px;
+                                                        }
+                                                        
+                                                        .main p {
+                                                            width: 50%;
+                                                            margin-top: 7%;
+                                                            margin-left: 25%;
+                                                            margin-right: 25%;
+                                                            margin-bottom: 60px;
+                                                            line-height: 1.9;
+                                                            color: gray;
+                                                        }
+                                                        
+                                                        .vorem {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                                                            grid-gap: 100px;
+                                                        }
+                                                        
+                                                        .vorem .col1 {
+                                                            padding: 30px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .vorem .col1 .row1,
+                                                        .vorem .col1 .row2 {
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .vorem .col1 .row1 i,
+                                                        .vorem .col1 .row2 i {
+                                                            position: absolute;
+                                                            left: 60px;
+                                                        }
+                                                        
+                                                        .vorem .col1 .row1 h1,
+                                                        .vorem .col1 .row2 h1 {
+                                                            font-size: 20px;
+                                                            text-align: start;
+                                                            padding: 10px;
+                                                            color: #19c8fa;
+                                                        }
+                                                        
+                                                        .vorem .col1 .row1 p,
+                                                        .vorem .col1 .row2 p {
+                                                            margin-bottom: 20px;
+                                                            padding: 10px;
+                                                            color: gray;
+                                                            text-align: start;
+                                                            line-height: 1.9;
+                                                        }
+                                                        
+                                                        .vorem .col2 {
+                                                            padding: 30px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .vorem .col2 .row1,
+                                                        .vorem .col2 .row2 {
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .vorem .col2 .row1 i,
+                                                        .vorem .col2 .row2 i {
+                                                            position: absolute;
+                                                            right: 620px;
+                                                        }
+                                                        
+                                                        .vorem .col2 .row1 h1,
+                                                        .vorem .col2 .row2 h1 {
+                                                            font-size: 20px;
+                                                            text-align: start;
+                                                            padding: 10px;
+                                                            color: #19c8fa;
+                                                        }
+                                                        
+                                                        .vorem .col2 .row1 p,
+                                                        .vorem .col2 .row2 p {
+                                                            margin-bottom: 20px;
+                                                            padding: 10px;
+                                                            color: gray;
+                                                            text-align: start;
+                                                            line-height: 1.9;
+                                                        }
+                                                        /* Large */
+                                                        
+                                                        @media (max-width: 1200px) {
+                                                            .vorem {
+                                                                grid-gap: 10px;
+                                                                margin-left: 50px;
+                                                            }
+                                                            .vorem .col1 .row1,
+                                                            .vorem .col1 .row2 {
+                                                                margin-left: 20px;
+                                                            }
+                                                            .vorem .col2 .row1,
+                                                            .vorem .col2 .row2 {
+                                                                margin-left: 20px;
+                                                            }
+                                                            .vorem .col2 .row1 i,
+                                                            .vorem .col2 .row2 i {
+                                                                position: absolute;
+                                                                right: 493px;
+                                                                margin-right: 20px;
+                                                                margin-left: 20px;
+                                                            }
+                                                        }
+                                                        /* Medium */
+                                                        
+                                                        @media (max-width: 992px) {
+                                                            .vorem .col1 .row1 i,
+                                                            .vorem .col1 .row2 i {
+                                                                margin-left: 40px;
+                                                                margin-right: 50px;
+                                                            }
+                                                            .vorem .col1 {
+                                                                padding: 0px;
+                                                                margin-bottom: 0px;
+                                                            }
+                                                            .vorem {
+                                                                grid-gap: 0px;
+                                                            }
+                                                            .vorem .col2 {
+                                                                padding: 0px;
+                                                                margin-bottom: 0px;
+                                                            }
+                                                            .vorem .col2 .row1 i,
+                                                            .vorem .col2 .row2 i {
+                                                                left: -210px;
+                                                                margin-left: 40px;
+                                                                margin-right: 50px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 899px) {
+                                                            .vorem .col2 .row1 i,
+                                                            .vorem .col2 .row2 i {
+                                                                left: -200px;
+                                                                margin-left: -10px;
+                                                                margin-right: 20px;
+                                                            }
+                                                            .vorem .col1 .row1 i,
+                                                            .vorem .col1 .row2 i {
+                                                                margin-left: 20px;
+                                                                margin-right: 20px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 800px) {
+                                                            .vorem .col1 {
+                                                                margin-bottom: 10px;
+                                                            }
+                                                            .vorem .col1 .row1,
+                                                            .vorem .col1 .row2 {
+                                                                margin-bottom: 100px;
+                                                            }
+                                                            .vorem .col1 .row1 h1,
+                                                            .vorem .col1 .row2 h1 {
+                                                                text-align: center;
+                                                            }
+                                                            .vorem .col1 .row1 p,
+                                                            .vorem .col1 .row2 p {
+                                                                text-align: center;
+                                                            }
+                                                            .vorem .col2 {
+                                                                margin-bottom: 10px;
+                                                            }
+                                                            .vorem .col2 .row1,
+                                                            .vorem .col2 .row2 {
+                                                                margin-bottom: 100px;
+                                                            }
+                                                            .vorem .col2 .row1 h1,
+                                                            .vorem .col2 .row2 h1 {
+                                                                text-align: center;
+                                                            }
+                                                            .vorem .col2 .row1 p,
+                                                            .vorem .col2 .row2 p {
+                                                                text-align: center;
+                                                            }
+                                                            .vorem .col2 .row1 i,
+                                                            .vorem .col2 .row2 i {
+                                                                left: 10%;
+                                                            }
+                                                            .vorem .col1 .row1 i,
+                                                            .vorem .col1 .row2 i {
+                                                                left: 10%;
+                                                            }
+                                                        }
+                                                        /* end SERVICES  */
+                                                        /* start DESIGN  */
+                                                        
+                                                        .DESTNG {
+                                                            background-image: url(../image/design-features.jpg);
+                                                            background-position: center;
+                                                            background-size: cover;
+                                                            height: 600px;
+                                                            position: relative;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            overflow: hidden;
+                                                        }
+                                                        
+                                                        .DESTNG::after {
+                                                            content: "";
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background-color: rgb(0 0 0 / 50%);
+                                                            position: absolute;
+                                                        }
+                                                        
+                                                        .DESTNG .img {
+                                                            width: 20%;
+                                                            height: 30%;
+                                                            text-align: center;
+                                                            z-index: 2;
+                                                        }
+                                                        
+                                                        .DESTNG .img img {
+                                                            position: absolute;
+                                                        }
+                                                        
+                                                        .cont {
+                                                            background-color: #0f748fb3;
+                                                            position: absolute;
+                                                            right: 0;
+                                                            width: 50%;
+                                                            height: 55%;
+                                                            padding: 40px;
+                                                            z-index: 2;
+                                                        }
+                                                        
+                                                        .cont h1 {
+                                                            color: white;
+                                                            font-size: x-large;
+                                                            font-weight: 100;
+                                                            margin-bottom: 30px;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .cont ul {
+                                                            list-style: none;
+                                                        }
+                                                        
+                                                        .cont ul li {
+                                                            color: white;
+                                                            margin-left: 35px;
+                                                            padding: 15px;
+                                                        }
+                                                        
+                                                        .cont ul li::before {
+                                                            font-family: "Font Awesome 5 Free";
+                                                            content: "\f108";
+                                                            color: white;
+                                                            font-weight: 900;
+                                                            padding-right: 20px;
+                                                            margin-left: -15px;
+                                                        }
+                                                        
+                                                        @media (max-width: 992px) {
+                                                            .DESTNG .img img {
+                                                                left: 20px;
+                                                            }
+                                                            .cont h1 {
+                                                                font-size: large;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 768px) {
+                                                            .DESTNG .img {
+                                                                display: none;
+                                                            }
+                                                            .DESTNG .img img {
+                                                                display: none;
+                                                            }
+                                                            .cont {
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                        /* end DESIGN */
+                                                        /* start portfolio */
+                                                        
+                                                        .portfolio {
+                                                            margin-bottom: 100px;
+                                                        }
+                                                        
+                                                        .main {}
+                                                        
+                                                        .main h1 {
+                                                            text-align: center;
+                                                            position: relative;
+                                                            margin-top: 100px;
+                                                            font-weight: 100;
+                                                            font-size: 40px;
+                                                        }
+                                                        
+                                                        .main p {
+                                                            text-align: center;
+                                                            width: 50%;
+                                                            margin-top: 7%;
+                                                            margin-left: 25%;
+                                                            margin-right: 25%;
+                                                            margin-bottom: 60px;
+                                                            line-height: 1.9;
+                                                            color: gray;
+                                                        }
+                                                        
+                                                        .portfolio ul {
+                                                            display: flex;
+                                                            justify-content: center;
+                                                        }
+                                                        
+                                                        .portfolio ul li {
+                                                            padding: 10px;
+                                                        }
+                                                        
+                                                        .portfolio ul li.a {
+                                                            background-color: #19c8fa;
+                                                            color: white;
+                                                        }
+                                                        /*  start image */
+                                                        /* end image */
+                                                        
+                                                        .allimg {
+                                                            display: flex;
+                                                            flex-wrap: wrap;
+                                                            align-items: baseline;
+                                                            margin-top: 40px;
+                                                            margin-bottom: 40px;
+                                                        }
+                                                        
+                                                        .box {
+                                                            width: 25%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .portfolio .allimg .box:hover img {
+                                                            transform: rotate( 3deg) scale(1.1);
+                                                        }
+                                                        
+                                                        .box img {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .text {
+                                                            position: absolute;
+                                                        }
+                                                        
+                                                        .portfolio .allimg .box:hover .text {
+                                                            transition: all 0.5s;
+                                                            display: block;
+                                                            padding: 10px;
+                                                            background-color: white;
+                                                            position: absolute;
+                                                            width: 100%;
+                                                            bottom: 0px;
+                                                        }
+                                                        
+                                                        .text h1 {
+                                                            color: black;
+                                                            font-size: medium;
+                                                            font-weight: 100;
+                                                        }
+                                                        
+                                                        .text p {
+                                                            color: #19c8fa;
+                                                        }
+                                                        
+                                                        @media (max-width: 1200px) {
+                                                            .box {
+                                                                width: 50%;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 992px) {
+                                                            .box {
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                        
+                                                        .portfolio a {
+                                                            margin-left: 50%;
+                                                            text-decoration: none;
+                                                            text-align: center;
+                                                            color: white;
+                                                            background-color: #19c8fa;
+                                                            text-transform: uppercase;
+                                                            padding: 10px;
+                                                        }
+                                                        /* end portfolio */
+                                                        /* start video  */
+                                                        
+                                                        .video {
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .video::before {
+                                                            content: "";
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            position: absolute;
+                                                            background-color: rgb(0 0 0 / 50%);
+                                                        }
+                                                        
+                                                        video {
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .video .info {
+                                                            text-align: center;
+                                                            width: 100%;
+                                                            transform: translateY(-20%);
+                                                            position: absolute;
+                                                            background-color: #0f748fb3;
+                                                            top: 35%;
+                                                        }
+                                                        
+                                                        .video .info h1 {
+                                                            color: white;
+                                                            font-weight: 100;
+                                                            margin-bottom: 20px;
+                                                            font-size: x-large;
+                                                        }
+                                                        
+                                                        .video .info p {
+                                                            color: white;
+                                                            padding: 10px;
+                                                        }
+                                                        
+                                                        .video .info button {
+                                                            background-color: black;
+                                                            border: none;
+                                                            line-height: 0.1;
+                                                            height: 15px;
+                                                            color: white;
+                                                            margin-top: 20px;
+                                                            margin-bottom: 20px;
+                                                            padding: 20px;
+                                                        }
+                                                        /* end video  */
+                                                        /* start aboutas */
+                                                        
+                                                        .ABOUT img {
+                                                            width: 60%;
+                                                            margin-bottom: -110px;
+                                                            margin-left: 20%;
+                                                        }
+                                                        /* end aboutas */
+                                                        /* start state */
+                                                        
+                                                        .state {
+                                                            background-image: url(../image/stats.png);
+                                                            position: relative;
+                                                            padding-top: 100px;
+                                                            padding-bottom: 100px;
+                                                        }
+                                                        
+                                                        .state::before {
+                                                            content: "";
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background-color: rgb(0 0 0 / 70%);
+                                                            position: absolute;
+                                                            left: 0;
+                                                            top: 0;
+                                                        }
+                                                        
+                                                        .state .container {
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-wrap: wrap;
+                                                        }
+                                                        
+                                                        .state .container .box {
+                                                            padding: 40px;
+                                                            background-color: #0f748fb3;
+                                                        }
+                                                        
+                                                        .state .container .box i {
+                                                            color: white;
+                                                            width: 40px;
+                                                            border-radius: 50%;
+                                                            background-color: black;
+                                                            height: 40px;
+                                                            line-height: 2.4;
+                                                        }
+                                                        
+                                                        .state .container .box h1 {
+                                                            color: white;
+                                                            font-size: xxx-large;
+                                                        }
+                                                        
+                                                        .state .container .box p {
+                                                            color: white;
+                                                            font-weight: 100;
+                                                        }
+                                                        
+                                                        @media (max-width: 1200px) {
+                                                            .ABOUT img {
+                                                                margin-bottom: -80px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 992px) {
+                                                            .ABOUT img {
+                                                                width: 90%;
+                                                                margin-bottom: -100px;
+                                                                margin-left: 0;
+                                                            }
+                                                            .state .container {
+                                                                margin-left: 10px;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (max-width: 768px) {}
+                                                        /* end state */
+                                                        /* start SKILLS */
+                                                        
+                                                        .our {
+                                                            padding-top: 60px;
+                                                            padding-bottom: 60px;
+                                                        }
+                                                        
+                                                        .our .container {
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            flex-wrap: wrap;
+                                                        }
+                                                        
+                                                        .our .container>div {
+                                                            flex-basis: 45%;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS h3 {
+                                                            font-weight: 100;
+                                                            padding: 20px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS p {
+                                                            color: #777;
+                                                            font-weight: 100;
+                                                            line-height: 1.9;
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS .content {
+                                                            display: flex;
+                                                            align-items: center;
+                                                            margin-bottom: 60px;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS .content img {
+                                                            width: 100px;
+                                                            border-radius: 50%;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS .content .text {
+                                                            line-height: 1.8;
+                                                            text-align: start;
+                                                            color: black;
+                                                            font-weight: 100;
+                                                            border-bottom: 1px solid #ccc;
+                                                            width: 30%;
+                                                            margin-left: 130px;
+                                                            padding: 15px;
+                                                        }
+                                                        
+                                                        .TESTIMONIALS .content p {
+                                                            text-align: right;
+                                                            margin-bottom: 0;
+                                                        }
+                                                        
+                                                        .cycle22 {
+                                                            position: relative;
+                                                            width: 100px;
+                                                            height: 5%;
+                                                            padding: 10px;
+                                                            left: 50%;
+                                                        }
+                                                        
+                                                        .cycle122 {
+                                                            width: 15%;
+                                                            height: 15px;
+                                                            position: absolute;
+                                                            border-radius: 50%;
+                                                            border: 1px solid #777;
+                                                        }
+                                                        
+                                                        .cycle222 {
+                                                            width: 15%;
+                                                            height: 15px;
+                                                            position: absolute;
+                                                            background-color: #19c8fa;
+                                                            border-radius: 50%;
+                                                            margin-left: 30px;
+                                                        }
+                                                        
+                                                        .cycle322 {
+                                                            width: 15%;
+                                                            height: 15px;
+                                                            position: absolute;
+                                                            border: 1px solid #777;
+                                                            border-radius: 50%;
+                                                            margin-left: 60px;
+                                                        }
+                                                        
+                                                        .skills {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .skills h3 {
+                                                            font-weight: 100;
+                                                            padding: 20px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .skills p {
+                                                            color: #777;
+                                                            font-weight: 100;
+                                                            line-height: 1.9;
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .skills .pro {
+                                                            margin-bottom: 40px;
+                                                        }
+                                                        
+                                                        .skills .pro h4 {
+                                                            font-weight: 100;
+                                                            text-align: left;
+                                                            margin-bottom: 15px;
+                                                        }
+                                                        
+                                                        .skills .pro .progr {
+                                                            background-color: #e6e0e0;
+                                                            height: 15px;
+                                                            padding: 15px;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .skills .pro .progr span {
+                                                            position: absolute;
+                                                            height: 30px;
+                                                            background-color: #19c8fa;
+                                                            top: 0;
+                                                            left: 0;
+                                                        }
+                                                        
+                                                        .skills .pro .progr span::after {
+                                                            content: attr(data-progress);
+                                                            background-color: black;
+                                                            color: white;
+                                                            padding: 5px;
+                                                            border-radius: 5px;
+                                                            font-weight: 100;
+                                                            right: -10px;
+                                                            bottom: 40px;
+                                                            position: absolute;
+                                                        }
+                                                        
+                                                        .skills .pro .progr span::before {
+                                                            content: "";
+                                                            position: absolute;
+                                                            width: 0px;
+                                                            height: 0px;
+                                                            right: 0;
+                                                            top: -10px;
+                                                            border: 10px solid;
+                                                            /* background-color: black; */
+                                                            border-color: #000 transparent transparent transparent;
+                                                        }
+                                                        
+                                                        .s1,
+                                                        .s4 {
+                                                            width: 90%;
+                                                        }
+                                                        
+                                                        .s3 {
+                                                            width: 80%;
+                                                        }
+                                                        
+                                                        .s2 {
+                                                            width: 85%;
+                                                        }
+                                                        /* end SKILLS */
+                                                        /* start aliquet  */
+                                                        
+                                                        .aliquet {
+                                                            position: relative;
+                                                            background-image: url(../image/quote.jpg);
+                                                            background-size: cover;
+                                                            padding-top: 100px;
+                                                            padding-bottom: 100px;
+                                                            text-align: center;
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .aliquet::before {
+                                                            content: "";
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            position: absolute;
+                                                            background-color: rgb(0 0 0 / 75%);
+                                                            top: 0;
+                                                            left: 0;
+                                                        }
+                                                        
+                                                        .aliquet .container {
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .aliquet .container q {
+                                                            font-weight: 500;
+                                                            font-size: xx-large;
+                                                            display: block;
+                                                        }
+                                                        
+                                                        .aliquet .container p {
+                                                            margin-top: 20px;
+                                                            font-weight: 100;
+                                                        }
+                                                        /* end aliquet  */
+                                                        /* start PRICING  */
+                                                        
+                                                        .PRICING {
+                                                            padding-bottom: 100px;
+                                                        }
+                                                        
+                                                        .PRICING .container .Feature {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+                                                            gap: 60px;
+                                                        }
+                                                        
+                                                        .Feature .f1 {
+                                                            background-color: #fcfcfc;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .Feature .f1 .head {
+                                                            padding: 40px 20px;
+                                                            border-top: 1px solid #19c8fa;
+                                                            border-bottom: 1px solid #19c8fa;
+                                                        }
+                                                        
+                                                        .Feature .f1 .head h3 {
+                                                            font-weight: 100;
+                                                            margin-bottom: 25px;
+                                                        }
+                                                        
+                                                        .Feature .f1 .head span {
+                                                            font-size: 60px;
+                                                        }
+                                                        
+                                                        .Feature .f1 .head span::before {
+                                                            content: "$";
+                                                            font-weight: 100;
+                                                            font-size: x-large;
+                                                            position: relative;
+                                                            right: 3px;
+                                                            top: -45px
+                                                        }
+                                                        
+                                                        .Feature .f1 .head span::after {
+                                                            content: "/Mo";
+                                                            font-weight: bold;
+                                                            font-size: large;
+                                                        }
+                                                        
+                                                        .Feature .f1 ul {
+                                                            border-bottom: 1px solid #19c8fa;
+                                                        }
+                                                        
+                                                        .Feature .f1 ul li {
+                                                            margin: 10px;
+                                                            position: relative;
+                                                            padding: 15px;
+                                                            font-weight: 100;
+                                                        }
+                                                        
+                                                        .Feature .f1 ul li:not(:first-child)::after {
+                                                            content: "";
+                                                            position: absolute;
+                                                            left: 25%;
+                                                            top: 0;
+                                                            width: 50%;
+                                                            height: 1px;
+                                                            border-bottom: 1px solid #19c8fa;
+                                                        }
+                                                        
+                                                        .Feature .f1 .fan {
+                                                            margin: 40px;
+                                                        }
+                                                        
+                                                        .Feature .f1 .fan a {
+                                                            font-weight: 100;
+                                                            text-decoration: none;
+                                                            padding: 20px;
+                                                            border: 1px solid #19c8fa;
+                                                        }
+                                                        
+                                                        .PRICING .container .request {
+                                                            margin-top: 40px;
+                                                            text-align: center;
+                                                            margin-bottom: 20px;
+                                                            font-size: 20px;
+                                                            font-weight: 100;
+                                                        }
+                                                        
+                                                        .PRICING .container .e {
+                                                            background-color: #19c8fa;
+                                                            padding: 20px;
+                                                            text-decoration: none;
+                                                            position: absolute;
+                                                            left: 45%;
+                                                        }
+                                                        /* end PRICING  */
+                                                        /*start Subscribe */
+                                                        
+                                                        .Subscribe {
+                                                            background-image: url(../image/subscribe.jpg);
+                                                            background-size: cover;
+                                                            padding-bottom: 100px;
+                                                            padding-top: 100px;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .Subscribe::after {
+                                                            content: "";
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background-color: rgb(0 0 0 / 50%);
+                                                        }
+                                                        
+                                                        .Subscribe .container {
+                                                            display: flex;
+                                                            align-items: center;
+                                                        }
+                                                        
+                                                        .Subscribe .container form {
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            display: flex;
+                                                        }
+                                                        
+                                                        .Subscribe .container form i {
+                                                            color: white;
+                                                            position: absolute;
+                                                            top: 22px;
+                                                            left: 20px;
+                                                        }
+                                                        
+                                                        .Subscribe .container form input[type="email"] {
+                                                            background-color: transparent;
+                                                            border: 1px solid white;
+                                                            caret-color: #19c8fa;
+                                                            padding: 20px 20px 20px 60px;
+                                                        }
+                                                        
+                                                        .Subscribe .container form ::placeholder {
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .Subscribe .container form input[ type="submit"] {
+                                                            padding: 10px 20px;
+                                                            background-color: #19c8fa;
+                                                            color: white;
+                                                            border-top: 1px solid white;
+                                                            border-right: 1px solid white;
+                                                            border-bottom: 1px solid white;
+                                                            border-left: none;
+                                                        }
+                                                        
+                                                        .Subscribe .container p {
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            color: white;
+                                                            font-weight: 100;
+                                                            padding: 15px;
+                                                            margin-left: 100px;
+                                                        }
+                                                        
+                                                        @media (max-width: 992px) {}
+                                                        
+                                                        @media (max-width: 768px) {
+                                                            .Subscribe .container p {
+                                                                margin-left: 50px;
+                                                            }
+                                                            .Subscribe .container form input[type="email"] {
+                                                                padding: 20px 20px 20px 25px;
+                                                                margin-left: 10px;
+                                                            }
+                                                            .Subscribe .container form i {
+                                                                left: 10px;
+                                                            }
+                                                        }
+                                                        /* end  Subscribe  */
+                                                        /* start CONTACT US  */
+                                                        
+                                                        .CONTACT {
+                                                            padding-bottom: 100px;
+                                                            padding-top: 50px;
+                                                        }
+                                                        
+                                                        .CONTACT .container {}
+                                                        
+                                                        .content {
+                                                            display: flex;
+                                                            justify-content: space-around;
+                                                        }
+                                                        
+                                                        .content .info {}
+                                                        
+                                                        .content .info h4 {
+                                                            font-weight: 100;
+                                                            margin-bottom: 20px;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .content .info .phon1,
+                                                        .content .info .phon2 {
+                                                            display: block;
+                                                            color: #686666;
+                                                            font-weight: 100;
+                                                            margin-bottom: 10px;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .content .info .phon2 {
+                                                            margin-bottom: 100px;
+                                                        }
+                                                        
+                                                        .content .info address {
+                                                            color: #686666;
+                                                            font-weight: 100;
+                                                            margin-bottom: 10px;
+                                                            margin-left: 10px;
+                                                        }
+                                                        
+                                                        .content form {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                        }
+                                                        
+                                                        .content form input[type="text"] {
+                                                            border: 1px solid #dbd3d3;
+                                                            padding: 20px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .content form input[type="submit"] {
+                                                            background-color: #19c8fa;
+                                                            color: white;
+                                                            padding: 20px;
+                                                            margin-bottom: 20px;
+                                                            width: 25%;
+                                                            cursor: pointer;
+                                                            border: none;
+                                                            margin-left: 600px;
+                                                        }
+                                                        
+                                                        .content form input[type="email"] {
+                                                            border: 1px solid #dbd3d3;
+                                                            padding: 20px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .content form input[type="email"]:focus,
+                                                        .content form input[type="text"]:focus,
+                                                        textarea:focus {
+                                                            outline: none;
+                                                        }
+                                                        
+                                                        .content form textarea {
+                                                            padding: 20px;
+                                                            border: 1px solid #dbd3d3;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        /* end  Subscribe  */
+                                                        /* stat footer  */
+                                                        
+                                                        footer {
+                                                            background-image: url(../image/subscribe.jpg);
+                                                            background-size: cover;
+                                                            padding-bottom: 100px;
+                                                            padding-top: 100px;
+                                                            position: relative;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        footer::after {
+                                                            content: "";
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background-color: rgb(0 0 0 / 70%);
+                                                        }
+                                                        
+                                                        footer .container {}
+                                                        
+                                                        footer .container img {
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            margin-bottom: 40px;
+                                                        }
+                                                        
+                                                        footer .container h3 {
+                                                            color: white;
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            font-weight: 100;
+                                                            margin-bottom: 30px;
+                                                        }
+                                                        
+                                                        footer .container h3::after {
+                                                            content: "";
+                                                            width: 180px;
+                                                            height: 1px;
+                                                            top: 35px;
+                                                            left: 40%;
+                                                            position: absolute;
+                                                            background-color: white;
+                                                        }
+                                                        
+                                                        footer .container .ic {
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            margin-bottom: 30px;
+                                                        }
+                                                        
+                                                        footer .container .ic i {
+                                                            color: white;
+                                                            position: relative;
+                                                            margin-left: 15px;
+                                                            z-index: 1;
+                                                        }
+                                                        
+                                                        footer .container p {
+                                                            color: white;
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            font-weight: 100;
+                                                            margin-bottom: 30px;
+                                                        }
+                                                        
+                                                        footer .container p span {
+                                                            color: #19c8fa;
+                                                            position: relative;
+                                                            z-index: 1;
+                                                            font-weight: 100;
+                                                        }
+                                                        /* end  footer  */
